@@ -5,7 +5,7 @@ import openai
 app = Flask(__name__)
 
 client = openai.OpenAI(
-    api_key="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",
+    api_key="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",
     organization="org-EGa2wJvxhFRpBMc9X8JL5ybn",
     project="proj_U30YgR005BETRTnmfy4ied7K"
 )
