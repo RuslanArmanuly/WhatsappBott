@@ -1,11 +1,12 @@
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
-import openai
+from openai import OpenAI
 
 app = Flask(__name__)
 
-client = openai.OpenAI(
-    api_key="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"
+# Создаём клиента OpenAI
+client = OpenAI(
+    api_key="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"
 )
 
 @app.route("/whatsapp", methods=["POST"])
@@ -27,5 +28,4 @@ def whatsapp():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10000)
-
 
